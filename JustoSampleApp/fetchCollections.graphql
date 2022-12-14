@@ -1,0 +1,25 @@
+query fetchCollections(
+    $first: Int
+    $productFirst: Int
+    $after: String
+    $filter: CollectionFilterInput!
+    $postalCode: String
+    ) {
+        collections(first: $first, filter: $filter, postalCode: $postalCode) {
+            edges {
+                node {
+                    products(first: $productFirst, after: $after) {
+                        edges {
+                            node {
+                                id
+                                name
+                                thumbnail {
+                                    url
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}

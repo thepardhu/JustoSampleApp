@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9259861FAF62FDDB40024D03 /* Pods_JustoSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435F3A6376CC1E996F7A7058 /* Pods_JustoSampleApp.framework */; };
 		D3C81B7429494A0000B1E978 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = D3C81B7329494A0000B1E978 /* schema.json */; };
+		D3C81B7829494D1600B1E978 /* fetchCollections.graphql in Resources */ = {isa = PBXBuildFile; fileRef = D3C81B7729494D1600B1E978 /* fetchCollections.graphql */; };
+		D3C81B7B29494E0400B1E978 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C81B7A29494E0400B1E978 /* API.swift */; };
 		D3DA393F294947A600A87AC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DA393E294947A600A87AC3 /* AppDelegate.swift */; };
 		D3DA3941294947A600A87AC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DA3940294947A600A87AC3 /* SceneDelegate.swift */; };
 		D3DA3943294947A600A87AC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DA3942294947A600A87AC3 /* ViewController.swift */; };
@@ -22,6 +24,8 @@
 		435F3A6376CC1E996F7A7058 /* Pods_JustoSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JustoSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A56BDE19E9C82136087F44 /* Pods-JustoSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustoSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-JustoSampleApp/Pods-JustoSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D3C81B7329494A0000B1E978 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = SOURCE_ROOT; };
+		D3C81B7729494D1600B1E978 /* fetchCollections.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = fetchCollections.graphql; sourceTree = "<group>"; };
+		D3C81B7A29494E0400B1E978 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		D3DA393B294947A600A87AC3 /* JustoSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustoSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3DA393E294947A600A87AC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3DA3940294947A600A87AC3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,7 +86,9 @@
 		D3DA393D294947A600A87AC3 /* JustoSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				D3C81B7A29494E0400B1E978 /* API.swift */,
 				D3C81B7329494A0000B1E978 /* schema.json */,
+				D3C81B7729494D1600B1E978 /* fetchCollections.graphql */,
 				D3DA393E294947A600A87AC3 /* AppDelegate.swift */,
 				D3DA3940294947A600A87AC3 /* SceneDelegate.swift */,
 				D3DA3942294947A600A87AC3 /* ViewController.swift */,
@@ -106,6 +112,7 @@
 				D3DA3938294947A600A87AC3 /* Frameworks */,
 				D3DA3939294947A600A87AC3 /* Resources */,
 				37C5DA3F48F72CE4F7F5601E /* [CP] Embed Pods Frameworks */,
+				D3C81B7929494D8C00B1E978 /* Generate Apollo GraphQL API */,
 			);
 			buildRules = (
 			);
@@ -155,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3C81B7429494A0000B1E978 /* schema.json in Resources */,
+				D3C81B7829494D1600B1E978 /* fetchCollections.graphql in Resources */,
 				D3DA394B294947A700A87AC3 /* LaunchScreen.storyboard in Resources */,
 				D3DA3948294947A700A87AC3 /* Assets.xcassets in Resources */,
 				D3DA3946294947A600A87AC3 /* Main.storyboard in Resources */,
@@ -203,6 +211,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D3C81B7929494D8C00B1E978 /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nSCRIPT_PATH=\"${PODS_ROOT}/Apollo/scripts\"\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"${SRCROOT}/schema.json\" API.swift\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -212,6 +238,7 @@
 			files = (
 				D3DA3943294947A600A87AC3 /* ViewController.swift in Sources */,
 				D3DA393F294947A600A87AC3 /* AppDelegate.swift in Sources */,
+				D3C81B7B29494E0400B1E978 /* API.swift in Sources */,
 				D3DA3941294947A600A87AC3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
