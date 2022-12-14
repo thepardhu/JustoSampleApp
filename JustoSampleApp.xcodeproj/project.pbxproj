@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9259861FAF62FDDB40024D03 /* Pods_JustoSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435F3A6376CC1E996F7A7058 /* Pods_JustoSampleApp.framework */; };
+		D39DDAD5294A2DE200079FE6 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39DDAD4294A2DE200079FE6 /* Network.swift */; };
 		D3C81B7429494A0000B1E978 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = D3C81B7329494A0000B1E978 /* schema.json */; };
 		D3C81B7829494D1600B1E978 /* fetchCollections.graphql in Resources */ = {isa = PBXBuildFile; fileRef = D3C81B7729494D1600B1E978 /* fetchCollections.graphql */; };
 		D3C81B7B29494E0400B1E978 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C81B7A29494E0400B1E978 /* API.swift */; };
@@ -23,6 +24,7 @@
 		3007D7F0D9E0238BF3BBC60D /* Pods-JustoSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustoSampleApp.release.xcconfig"; path = "Target Support Files/Pods-JustoSampleApp/Pods-JustoSampleApp.release.xcconfig"; sourceTree = "<group>"; };
 		435F3A6376CC1E996F7A7058 /* Pods_JustoSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JustoSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A56BDE19E9C82136087F44 /* Pods-JustoSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustoSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-JustoSampleApp/Pods-JustoSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D39DDAD4294A2DE200079FE6 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		D3C81B7329494A0000B1E978 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = SOURCE_ROOT; };
 		D3C81B7729494D1600B1E978 /* fetchCollections.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = fetchCollections.graphql; sourceTree = "<group>"; };
 		D3C81B7A29494E0400B1E978 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				D3DA393E294947A600A87AC3 /* AppDelegate.swift */,
 				D3DA3940294947A600A87AC3 /* SceneDelegate.swift */,
 				D3DA3942294947A600A87AC3 /* ViewController.swift */,
+				D39DDAD4294A2DE200079FE6 /* Network.swift */,
 				D3DA3944294947A600A87AC3 /* Main.storyboard */,
 				D3DA3947294947A700A87AC3 /* Assets.xcassets */,
 				D3DA3949294947A700A87AC3 /* LaunchScreen.storyboard */,
@@ -236,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D39DDAD5294A2DE200079FE6 /* Network.swift in Sources */,
 				D3DA3943294947A600A87AC3 /* ViewController.swift in Sources */,
 				D3DA393F294947A600A87AC3 /* AppDelegate.swift in Sources */,
 				D3C81B7B29494E0400B1E978 /* API.swift in Sources */,
