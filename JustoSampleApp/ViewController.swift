@@ -12,10 +12,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        fetchData()
+        //fetchData()
     }
     
-    func fetchData(){
+   /* func fetchData(){
         let collectionsFilter = CollectionFilterInput(published: CollectionPublished.published, isHidden: false)
         Network.shared.apollo.fetch(query: FetchCollectionsQuery(first: Constants.collectionSize, productFirst: Constants.pageProductSize, filter: collectionsFilter, postalCode: "72730")) { result in
           switch result {
@@ -25,12 +25,12 @@ class ViewController: UIViewController {
             print("Failure! Error: \(error)")
           }
         }
-    }
+    }*/
     
-    private enum Constants {
+    /*private enum Constants {
         static let collectionSize = 10
         static let pageProductSize = 10
         static let pageSize = 30
-    }
+    }*/
 }
 
