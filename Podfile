@@ -7,5 +7,6 @@ target 'JustoSampleApp' do
 
   # Pods for JustoSampleApp
   pod 'Apollo', '~> 0.17.0', :inhibit_warnings => true
+  pod 'RxSwift', '6.5.0'
   
 end

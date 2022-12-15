@@ -2,17 +2,21 @@ PODS:
   - Apollo (0.17.0):
     - Apollo/Core (= 0.17.0)
   - Apollo/Core (0.17.0)
+  - RxSwift (6.5.0)
 
 DEPENDENCIES:
   - Apollo (~> 0.17.0)
+  - RxSwift (= 6.5.0)
 
 SPEC REPOS:
   trunk:
     - Apollo
+    - RxSwift
 
 SPEC CHECKSUMS:
   Apollo: abde576f6d0cd9b7c921b1c45d7fb7424f95ede7
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
 
-PODFILE CHECKSUM: 9e0951be6d8224532f438b0e29ac88ecd9748790
+PODFILE CHECKSUM: a7ebf752930745f7c718646d9045b082b7136655
 
 COCOAPODS: 1.11.3

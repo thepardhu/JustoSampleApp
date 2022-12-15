@@ -67,6 +67,70 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D3C18124294B81CA00272152 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D39DDAD4294A2DE200079FE6 /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D3C18125294B843400272152 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D3C18126294B844900272152 /* Data */,
+				D3C18127294B848600272152 /* Domain */,
+				D3C18128294B84D300272152 /* UI */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D3C18126294B844900272152 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D3C18129294B850200272152 /* Remote */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D3C18127294B848600272152 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		D3C18128294B84D300272152 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D3C18129294B850200272152 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				D3C1812A294B851800272152 /* Graphql */,
+				D3C1812B294B913C00272152 /* Model */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		D3C1812A294B851800272152 /* Graphql */ = {
+			isa = PBXGroup;
+			children = (
+				D3C81B7729494D1600B1E978 /* fetchCollections.graphql */,
+			);
+			path = Graphql;
+			sourceTree = "<group>";
+		};
+		D3C1812B294B913C00272152 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D3DA3932294947A600A87AC3 = {
 			isa = PBXGroup;
 			children = (
@@ -88,13 +152,13 @@
 		D3DA393D294947A600A87AC3 /* JustoSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				D3C18124294B81CA00272152 /* Network */,
+				D3C18125294B843400272152 /* Modules */,
 				D3C81B7A29494E0400B1E978 /* API.swift */,
 				D3C81B7329494A0000B1E978 /* schema.json */,
-				D3C81B7729494D1600B1E978 /* fetchCollections.graphql */,
 				D3DA393E294947A600A87AC3 /* AppDelegate.swift */,
 				D3DA3940294947A600A87AC3 /* SceneDelegate.swift */,
 				D3DA3942294947A600A87AC3 /* ViewController.swift */,
-				D39DDAD4294A2DE200079FE6 /* Network.swift */,
 				D3DA3944294947A600A87AC3 /* Main.storyboard */,
 				D3DA3947294947A700A87AC3 /* Assets.xcassets */,
 				D3DA3949294947A700A87AC3 /* LaunchScreen.storyboard */,

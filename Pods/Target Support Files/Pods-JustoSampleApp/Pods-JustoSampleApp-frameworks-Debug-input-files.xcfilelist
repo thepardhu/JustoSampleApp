@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-JustoSampleApp/Pods-JustoSampleApp-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Apollo/Apollo.framework
+${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
