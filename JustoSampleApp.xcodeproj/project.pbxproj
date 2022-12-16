@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		9259861FAF62FDDB40024D03 /* Pods_JustoSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435F3A6376CC1E996F7A7058 /* Pods_JustoSampleApp.framework */; };
-		D39DDAD5294A2DE200079FE6 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39DDAD4294A2DE200079FE6 /* Network.swift */; };
 		D3C1812E294B944A00272152 /* CollectionsRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C1812D294B944A00272152 /* CollectionsRemoteDataSource.swift */; };
 		D3C18130294B977B00272152 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C1812F294B977B00272152 /* Collection.swift */; };
 		D3C18133294B989200272152 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C18132294B989200272152 /* Extensions.swift */; };
-		D3C18135294B9A5700272152 /* ProductInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C18134294B9A5700272152 /* ProductInfo.swift */; };
-		D3C18137294B9A9A00272152 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C18136294B9A9A00272152 /* Category.swift */; };
 		D3C18139294B9F7B00272152 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C18138294B9F7B00272152 /* Constants.swift */; };
 		D3C1813B294BA06F00272152 /* ApolloClientBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C1813A294BA06F00272152 /* ApolloClientBuilder.swift */; };
 		D3C1813D294BA12100272152 /* RXApollo+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C1813C294BA12100272152 /* RXApollo+Extension.swift */; };
 		D3C1813F294BA2DB00272152 /* ApolloRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C1813E294BA2DB00272152 /* ApolloRequestError.swift */; };
 		D3C18141294BA3CE00272152 /* Error+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C18140294BA3CE00272152 /* Error+Extension.swift */; };
+		D3C18147294BB70400272152 /* CollectionGraphModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C18146294BB70400272152 /* CollectionGraphModel.swift */; };
+		D3C18149294C347600272152 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C18148294C347600272152 /* Product.swift */; };
+		D3C1814D294C375B00272152 /* productFragment.graphql in Resources */ = {isa = PBXBuildFile; fileRef = D3C1814C294C375B00272152 /* productFragment.graphql */; };
+		D3C1814F294C387B00272152 /* ProductGraphModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C1814E294C387B00272152 /* ProductGraphModel.swift */; };
+		D3C18151294C407D00272152 /* ProductInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C18150294C407D00272152 /* ProductInfo.swift */; };
 		D3C81B7429494A0000B1E978 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = D3C81B7329494A0000B1E978 /* schema.json */; };
 		D3C81B7829494D1600B1E978 /* fetchCollections.graphql in Resources */ = {isa = PBXBuildFile; fileRef = D3C81B7729494D1600B1E978 /* fetchCollections.graphql */; };
 		D3C81B7B29494E0400B1E978 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C81B7A29494E0400B1E978 /* API.swift */; };
@@ -34,17 +36,19 @@
 		3007D7F0D9E0238BF3BBC60D /* Pods-JustoSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustoSampleApp.release.xcconfig"; path = "Target Support Files/Pods-JustoSampleApp/Pods-JustoSampleApp.release.xcconfig"; sourceTree = "<group>"; };
 		435F3A6376CC1E996F7A7058 /* Pods_JustoSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JustoSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A56BDE19E9C82136087F44 /* Pods-JustoSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustoSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-JustoSampleApp/Pods-JustoSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
-		D39DDAD4294A2DE200079FE6 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		D3C1812D294B944A00272152 /* CollectionsRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsRemoteDataSource.swift; sourceTree = "<group>"; };
 		D3C1812F294B977B00272152 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		D3C18132294B989200272152 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		D3C18134294B9A5700272152 /* ProductInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfo.swift; sourceTree = "<group>"; };
-		D3C18136294B9A9A00272152 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		D3C18138294B9F7B00272152 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D3C1813A294BA06F00272152 /* ApolloClientBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloClientBuilder.swift; sourceTree = "<group>"; };
 		D3C1813C294BA12100272152 /* RXApollo+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RXApollo+Extension.swift"; sourceTree = "<group>"; };
 		D3C1813E294BA2DB00272152 /* ApolloRequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloRequestError.swift; sourceTree = "<group>"; };
 		D3C18140294BA3CE00272152 /* Error+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+Extension.swift"; sourceTree = "<group>"; };
+		D3C18146294BB70400272152 /* CollectionGraphModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionGraphModel.swift; sourceTree = "<group>"; };
+		D3C18148294C347600272152 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		D3C1814C294C375B00272152 /* productFragment.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = productFragment.graphql; sourceTree = "<group>"; };
+		D3C1814E294C387B00272152 /* ProductGraphModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductGraphModel.swift; sourceTree = "<group>"; };
+		D3C18150294C407D00272152 /* ProductInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfo.swift; sourceTree = "<group>"; };
 		D3C81B7329494A0000B1E978 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = SOURCE_ROOT; };
 		D3C81B7729494D1600B1E978 /* fetchCollections.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = fetchCollections.graphql; sourceTree = "<group>"; };
 		D3C81B7A29494E0400B1E978 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -87,14 +91,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		D3C18124294B81CA00272152 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				D39DDAD4294A2DE200079FE6 /* Network.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
 		D3C18125294B843400272152 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,9 +112,7 @@
 		D3C18127294B848600272152 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				D3C1812F294B977B00272152 /* Collection.swift */,
-				D3C18134294B9A5700272152 /* ProductInfo.swift */,
-				D3C18136294B9A9A00272152 /* Category.swift */,
+				D3C18145294BB6C300272152 /* Model */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -126,6 +120,7 @@
 		D3C18128294B84D300272152 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				D3DA3942294947A600A87AC3 /* ViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -144,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				D3C81B7729494D1600B1E978 /* fetchCollections.graphql */,
+				D3C1814C294C375B00272152 /* productFragment.graphql */,
 			);
 			path = Graphql;
 			sourceTree = "<group>";
@@ -151,6 +147,8 @@
 		D3C1812B294B913C00272152 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D3C18146294BB70400272152 /* CollectionGraphModel.swift */,
+				D3C1814E294C387B00272152 /* ProductGraphModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,6 +182,16 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		D3C18145294BB6C300272152 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D3C1812F294B977B00272152 /* Collection.swift */,
+				D3C18148294C347600272152 /* Product.swift */,
+				D3C18150294C407D00272152 /* ProductInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D3DA3932294947A600A87AC3 = {
 			isa = PBXGroup;
 			children = (
@@ -206,13 +214,11 @@
 			isa = PBXGroup;
 			children = (
 				D3C18131294B97DC00272152 /* Core */,
-				D3C18124294B81CA00272152 /* Network */,
 				D3C18125294B843400272152 /* Modules */,
 				D3C81B7A29494E0400B1E978 /* API.swift */,
 				D3C81B7329494A0000B1E978 /* schema.json */,
 				D3DA393E294947A600A87AC3 /* AppDelegate.swift */,
 				D3DA3940294947A600A87AC3 /* SceneDelegate.swift */,
-				D3DA3942294947A600A87AC3 /* ViewController.swift */,
 				D3DA3944294947A600A87AC3 /* Main.storyboard */,
 				D3DA3947294947A700A87AC3 /* Assets.xcassets */,
 				D3DA3949294947A700A87AC3 /* LaunchScreen.storyboard */,
@@ -285,6 +291,7 @@
 				D3C81B7429494A0000B1E978 /* schema.json in Resources */,
 				D3C81B7829494D1600B1E978 /* fetchCollections.graphql in Resources */,
 				D3DA394B294947A700A87AC3 /* LaunchScreen.storyboard in Resources */,
+				D3C1814D294C375B00272152 /* productFragment.graphql in Resources */,
 				D3DA3948294947A700A87AC3 /* Assets.xcassets in Resources */,
 				D3DA3946294947A600A87AC3 /* Main.storyboard in Resources */,
 			);
@@ -334,7 +341,7 @@
 		};
 		D3C81B7929494D8C00B1E978 /* Generate Apollo GraphQL API */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -359,13 +366,14 @@
 			files = (
 				D3C1812E294B944A00272152 /* CollectionsRemoteDataSource.swift in Sources */,
 				D3C18139294B9F7B00272152 /* Constants.swift in Sources */,
+				D3C18149294C347600272152 /* Product.swift in Sources */,
 				D3C1813D294BA12100272152 /* RXApollo+Extension.swift in Sources */,
-				D3C18137294B9A9A00272152 /* Category.swift in Sources */,
+				D3C18147294BB70400272152 /* CollectionGraphModel.swift in Sources */,
 				D3C18141294BA3CE00272152 /* Error+Extension.swift in Sources */,
-				D39DDAD5294A2DE200079FE6 /* Network.swift in Sources */,
+				D3C18151294C407D00272152 /* ProductInfo.swift in Sources */,
+				D3C1814F294C387B00272152 /* ProductGraphModel.swift in Sources */,
 				D3C1813F294BA2DB00272152 /* ApolloRequestError.swift in Sources */,
 				D3DA3943294947A600A87AC3 /* ViewController.swift in Sources */,
-				D3C18135294B9A5700272152 /* ProductInfo.swift in Sources */,
 				D3C18133294B989200272152 /* Extensions.swift in Sources */,
 				D3DA393F294947A600A87AC3 /* AppDelegate.swift in Sources */,
 				D3C81B7B29494E0400B1E978 /* API.swift in Sources */,

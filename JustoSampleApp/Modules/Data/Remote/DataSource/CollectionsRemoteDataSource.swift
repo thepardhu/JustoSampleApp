@@ -9,13 +9,21 @@ import Foundation
 import RxSwift
 
 protocol CollectionsRemote {
-    func fetchCollections(zipCode: String) -> Observable<[Collection]>
+    func fetchCollections(zipCode: String) -> Observable<[CollectionModel]>
 }
 
 class CollectionsRemoteDataSource : CollectionsRemote {
   
-  func fetchCollections(zipCode: String) -> Observable<[Collection]> {
-    <#code#>
+  private let apolloClientBuilder: ApolloClientBuilder
+  
+  init(apolloClientBuilder: ApolloClientBuilder) {
+      self.apolloClientBuilder = apolloClientBuilder
+  }
+ 
+  func fetchCollections(zipCode: String) -> Observable<[CollectionModel]> {
+    return apolloClientBuilder.buildRX([.authorization: String.empty])
+          .fetch(query: createFetchCollectionsQuery(zipCode: zipCode))
+          .compactMap { $0.collections?.edges.compactMap{ $0?.node?.asCollection() }}
   }
   
   private func createFetchCollectionsQuery(zipCode: String) -> FetchCollectionsQuery {

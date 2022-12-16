@@ -11,11 +11,7 @@ query fetchCollections(
                     products(first: $productFirst, after: $after) {
                         edges {
                             node {
-                                id
-                                name
-                                thumbnail {
-                                    url
-                                }
+                                ...productFragment
                             }
                         }
                     }

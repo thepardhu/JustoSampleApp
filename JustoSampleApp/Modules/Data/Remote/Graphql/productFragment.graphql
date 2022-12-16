@@ -1,0 +1,31 @@
+fragment productFragment on Product {
+    id
+    name
+    searchIndex
+    description
+    isAvailable
+    isPublished
+    showPriceWeightUnit
+    label
+    labelFontColor
+    labelBackgroundColor
+    weight {
+        unit
+        value
+    }
+    thumbnail {
+        url
+    }
+    images {
+        url
+        sortOrder
+     }
+    category {
+        id
+        name
+    }
+    productType {
+        name
+    }
+}
+
