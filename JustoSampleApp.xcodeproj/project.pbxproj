@@ -24,6 +24,7 @@
 		D3C18153294CEA7700272152 /* CollectionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C18152294CEA7700272152 /* CollectionRepository.swift */; };
 		D3C18156294CFBD000272152 /* GetCollectionUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C18155294CFBD000272152 /* GetCollectionUseCase.swift */; };
 		D3C18158294D021E00272152 /* RxSwift+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C18157294D021E00272152 /* RxSwift+Extension.swift */; };
+		D3C1815B294D06DE00272152 /* CollectionInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C1815A294D06DE00272152 /* CollectionInjector.swift */; };
 		D3C81B7429494A0000B1E978 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = D3C81B7329494A0000B1E978 /* schema.json */; };
 		D3C81B7829494D1600B1E978 /* fetchCollections.graphql in Resources */ = {isa = PBXBuildFile; fileRef = D3C81B7729494D1600B1E978 /* fetchCollections.graphql */; };
 		D3C81B7B29494E0400B1E978 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C81B7A29494E0400B1E978 /* API.swift */; };
@@ -55,6 +56,7 @@
 		D3C18152294CEA7700272152 /* CollectionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionRepository.swift; sourceTree = "<group>"; };
 		D3C18155294CFBD000272152 /* GetCollectionUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCollectionUseCase.swift; sourceTree = "<group>"; };
 		D3C18157294D021E00272152 /* RxSwift+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RxSwift+Extension.swift"; sourceTree = "<group>"; };
+		D3C1815A294D06DE00272152 /* CollectionInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionInjector.swift; sourceTree = "<group>"; };
 		D3C81B7329494A0000B1E978 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = SOURCE_ROOT; };
 		D3C81B7729494D1600B1E978 /* fetchCollections.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = fetchCollections.graphql; sourceTree = "<group>"; };
 		D3C81B7A29494E0400B1E978 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			children = (
 				D3C18126294B844900272152 /* Data */,
 				D3C18127294B848600272152 /* Domain */,
+				D3C18159294D060D00272152 /* DI */,
 				D3C18128294B84D300272152 /* UI */,
 			);
 			path = Modules;
@@ -119,7 +122,7 @@
 		D3C18127294B848600272152 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				D3C18154294CFB9800272152 /* Use Case */,
+				D3C18154294CFB9800272152 /* UseCase */,
 				D3C18145294BB6C300272152 /* Model */,
 			);
 			path = Domain;
@@ -201,12 +204,20 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		D3C18154294CFB9800272152 /* Use Case */ = {
+		D3C18154294CFB9800272152 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
 				D3C18155294CFBD000272152 /* GetCollectionUseCase.swift */,
 			);
-			path = "Use Case";
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		D3C18159294D060D00272152 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				D3C1815A294D06DE00272152 /* CollectionInjector.swift */,
+			);
+			path = DI;
 			sourceTree = "<group>";
 		};
 		D3DA3932294947A600A87AC3 = {
@@ -394,6 +405,7 @@
 				D3C18153294CEA7700272152 /* CollectionRepository.swift in Sources */,
 				D3C1813F294BA2DB00272152 /* ApolloRequestError.swift in Sources */,
 				D3DA3943294947A600A87AC3 /* ViewController.swift in Sources */,
+				D3C1815B294D06DE00272152 /* CollectionInjector.swift in Sources */,
 				D3C18133294B989200272152 /* Extensions.swift in Sources */,
 				D3DA393F294947A600A87AC3 /* AppDelegate.swift in Sources */,
 				D3C81B7B29494E0400B1E978 /* API.swift in Sources */,
