@@ -21,6 +21,7 @@
 		D3C1814D294C375B00272152 /* productFragment.graphql in Resources */ = {isa = PBXBuildFile; fileRef = D3C1814C294C375B00272152 /* productFragment.graphql */; };
 		D3C1814F294C387B00272152 /* ProductGraphModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C1814E294C387B00272152 /* ProductGraphModel.swift */; };
 		D3C18151294C407D00272152 /* ProductInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C18150294C407D00272152 /* ProductInfo.swift */; };
+		D3C18153294CEA7700272152 /* CollectionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C18152294CEA7700272152 /* CollectionRepository.swift */; };
 		D3C81B7429494A0000B1E978 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = D3C81B7329494A0000B1E978 /* schema.json */; };
 		D3C81B7829494D1600B1E978 /* fetchCollections.graphql in Resources */ = {isa = PBXBuildFile; fileRef = D3C81B7729494D1600B1E978 /* fetchCollections.graphql */; };
 		D3C81B7B29494E0400B1E978 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C81B7A29494E0400B1E978 /* API.swift */; };
@@ -49,6 +50,7 @@
 		D3C1814C294C375B00272152 /* productFragment.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = productFragment.graphql; sourceTree = "<group>"; };
 		D3C1814E294C387B00272152 /* ProductGraphModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductGraphModel.swift; sourceTree = "<group>"; };
 		D3C18150294C407D00272152 /* ProductInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfo.swift; sourceTree = "<group>"; };
+		D3C18152294CEA7700272152 /* CollectionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionRepository.swift; sourceTree = "<group>"; };
 		D3C81B7329494A0000B1E978 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = SOURCE_ROOT; };
 		D3C81B7729494D1600B1E978 /* fetchCollections.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = fetchCollections.graphql; sourceTree = "<group>"; };
 		D3C81B7A29494E0400B1E978 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		D3C18126294B844900272152 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				D3C18152294CEA7700272152 /* CollectionRepository.swift */,
 				D3C18129294B850200272152 /* Remote */,
 			);
 			path = Data;
@@ -372,6 +375,7 @@
 				D3C18141294BA3CE00272152 /* Error+Extension.swift in Sources */,
 				D3C18151294C407D00272152 /* ProductInfo.swift in Sources */,
 				D3C1814F294C387B00272152 /* ProductGraphModel.swift in Sources */,
+				D3C18153294CEA7700272152 /* CollectionRepository.swift in Sources */,
 				D3C1813F294BA2DB00272152 /* ApolloRequestError.swift in Sources */,
 				D3DA3943294947A600A87AC3 /* ViewController.swift in Sources */,
 				D3C18133294B989200272152 /* Extensions.swift in Sources */,
